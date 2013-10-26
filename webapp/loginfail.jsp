@@ -7,7 +7,10 @@
 <title>Insert title here</title>
 </head>
 <body>
-
+<%
+	System.out.print("blablabla");
+%>
+<%="Bye!" %>
 <h1>LOGIN FALHOU - <a href="login.jsp">tentar novamente</a></h1>
 
 

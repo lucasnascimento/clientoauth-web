@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jboss-web>
-	<security-domain>oauth-pearson</security-domain>
+	<security-domain>java:/jaas/oauth-pearson-policy</security-domain>
 </jboss-web>

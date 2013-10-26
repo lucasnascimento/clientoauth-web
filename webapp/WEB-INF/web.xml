@@ -9,25 +9,33 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
-  
   <security-constraint>
-	<web-resource-collection>
-		<web-resource-name>Admin Pages</web-resource-name>
-		<url-pattern>/admin/*</url-pattern>
-		<http-method>POST</http-method>
-		<http-method>GET</http-method>
-	</web-resource-collection>
-	<auth-constraint>
-		<description>Only allow users from following roles</description>
-		<role-name>administrator</role-name>
-		<role-name>superuser</role-name>
-	</auth-constraint>
-</security-constraint>
-<login-config>
-	<auth-method>FORM</auth-method>
-	<form-login-config>
-		<form-login-page>/login.jsp</form-login-page>
-		<form-error-page>/loginfail.jsp</form-error-page>
-	</form-login-config>
-</login-config>
+    <web-resource-collection>
+      <web-resource-name>Admin Pages</web-resource-name>
+      <url-pattern>/admin/*</url-pattern>
+      <http-method>POST</http-method>
+      <http-method>GET</http-method>
+    </web-resource-collection>
+    <auth-constraint>
+      <description>Only allow users from following roles</description>
+      <role-name>administrator</role-name>
+      <role-name>superuser</role-name>
+    </auth-constraint>
+  </security-constraint>
+  <security-role>
+    <description>Administradores</description>
+    <role-name>administrator</role-name>
+  </security-role>
+  <security-role>
+    <description>superusers</description>
+    <role-name>superuser</role-name>
+  </security-role>
+  <login-config>
+    <auth-method>FORM</auth-method>
+    <form-login-config>
+      <form-login-page>/login.jsp</form-login-page>
+      <form-error-page>/loginfail.jsp</form-error-page>
+    </form-login-config>
+  </login-config>
+  
 </web-app>
