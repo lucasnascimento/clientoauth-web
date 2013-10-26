@@ -37,10 +37,7 @@ import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.message.BasicNameValuePair;
-/**
- * @author uBarbFe
- *
- */
+
 @SuppressWarnings("unused")
 public class PearsonLoginModule implements LoginModule {
 
